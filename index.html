@@ -5,94 +5,514 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EverSour</title>
-  <!-- Your styles, links, and scripts remain unchanged -->
+  <title> EverSour </title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .section {
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact-list {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .contact-item {
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-icon {
+      margin-right: 10px;
+    }
+
+    .card-content {
+      flex: 1;
+    }
+
+    .card-title {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .card-link {
+      display: block;
+      margin-top: 8px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .card-address {
+      margin: 0;
+      font-style: normal;
+    }
+  </style>
+
+  <!-- 
+    - favicon link
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/index.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body id="top">
 
-  <!-- Header -->
+  <!-- 
+    - #HEADER
+  -->
+
   <header>
+
     <div class="container">
+
+        <header style="color: #000; text-align: center; padding: 20px;">
+    <h1 style="margin: 0; font-size: 4em;">Eversour</h1>
+  </header>
+
       <div class="navbar-wrapper">
+
         <button class="navbar-menu-btn" data-navbar-toggle-btn>
           <ion-icon name="menu-outline"></ion-icon>
         </button>
+
         <nav class="navbar" data-navbar>
+
           <ul class="navbar-list">
+
             <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
+              <a href="#home" class="nav-link"> Home </a>
             </li>
+
             <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
+              <a href="#about" class="nav-link"> About </a>
             </li>
+	<!--
+            <li class="nav-item">
+              <a href="#features" class="nav-link">hsgdsag</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">  </a>
+            </li> -->
+
             <li class="nav-item">
               <a href="#contact" class="nav-link">Contact</a>
             </li>
+
           </ul>
+
           <button class="btn btn-primary">Get in touch</button>
+
         </nav>
+
       </div>
+
     </div>
+
   </header>
 
-  <!-- Main Content -->
+
+
+
+
   <main>
+
     <article>
 
-      <!-- HERO Section -->
+      <!-- 
+        - #HERO
+      -->
+
       <section class="hero" id="home">
-        <!-- Your hero content -->
-      </section>
+        <div class="container">
 
-      <!-- ABOUT Section -->
-      <section class="about" id="about">
-        <!-- Your about content -->
-      </section>
+          <div class="hero-content">
 
-      <!-- FEATURES Section -->
-      <section class="features" id="features">
-        <!-- Your features content -->
-      </section>
+            <h1 class="h1 hero-title"> Elevate Your Brand in the Digital Age </h1>
 
-      <!-- CTA Section -->
-      <section class="cta">
-        <!-- Your CTA content -->
-      </section>
+            <p class="hero-text">
+              
+            </p>
 
-      <!-- CONTACT Section -->
-      <section class="contact" id="contact">
-        <!-- Your contact content -->
-        <div style="width: 300px; margin: 0 auto;">
-          <!-- Assuming the API is generating a form inside a div with class 'form-container' -->
-          <div class="form-container" style="width: 100%;">
-            <!-- Include the script to fetch the form from the API -->
-            <script src="https://sheetdb.io/s/f/2u934jdftwtdj.js"></script>
+            <button class="btn btn-primary">Get started</button>
+
           </div>
+
+          <div class="hero-banner"></div>
+
+        </div>
+
+        <img src="./assets/images/bg.png" alt="shape" class="shape-content">
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+        <div class="container">
+
+          <div class="about-top">
+
+            <h2 class="h2 section-title">Empowering Brands Through Online Domination</h2>
+
+            <p class="section-text">
+              From crafting captivating websites and optimizing online marketing campaigns to creating stunning visuals, we empower businesses, creators, and influencers across industries to stand out and thrive. We believe in quality without compromise, offering budget-friendly solutions tailor-made for your specific goals. No matter your size or niche, our team of experts is here to collaborate and fuel your growth
+            </p>
+
+            <ul class="about-list">
+
+              <li>
+                <div class="about-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="briefcase-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title"> Web Development </h3>
+           <p>
+             <ul type="disc">
+                <li> WordPress </li>
+                <li> Fully Coded </li>
+                
+
+             </ul>
+starting from 5999
+                  </p>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="about-card">
+                <div class="service-card">
+  
+                  <div class="card-icon">
+                    <ion-icon name="desktop-outline"></ion-icon>
+                  </div>
+  
+                  <h3 class="h3 title"> Online Marketing </h3>
+  
+                  <p class="text">
+                    <ul type="disc">
+                <li> SEO </li>
+              <li> SEM </li> <li> SMM </li>
+                
+                 
+             </ul>
+starting from 5999
+                  
+                  </p>
+  
+                  <button class="card-btn" aria-label="Show More">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </button>
+                </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="about-card">
+                    <div class="service-card">
+      
+                      <div class="card-icon">
+                        <ion-icon name="telescope-outline"></ion-icon>
+                      </div>
+      
+                      <h3 class="h3 title">Graphic Design </h3>
+      
+                      <p class="text">
+                         <ul type="disc">
+                <li> Post, Templates and Thumbnails </li>
+                <li> Short/Long video editing </li>
+<li> logo and other designs </li>
+                
+
+             </ul>
+starting from 5999
+                  
+                      </p>
+      
+                      <button class="card-btn" aria-label="Show More">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                      </button>
+                    </div>
+                </div>
+              </li>
+              
+          <div class="about-bottom">
+
+            <figure class="about-bottom-banner">
+              <img src="./assets/images/about-banner.png" alt="about banner" class="about-banner">
+            </figure>
+
+            <div class="about-bottom-content">
+
+              <h2 class="h2 section-title"> We're Obsessed with Growth, Not Price Tags </h2>
+
+              <p class="section-text">
+                At Eversour, quality is king, but affordability is our queen. We believe everyone deserves a chance to shine online, which is why we offer competitive pricing without compromising on results. We'll work with your budget to tailor solutions that maximize your ROI and fuel your brand's ascent.
+              </p>
+
+              <button class="btn btn-secondary">Sign Up For Free growth audit</button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="features" id="features">
+        <div class="container">
+
+          <h2 class="h2 section-title"> Ready to Unleash Your Online Potential?</h2>
+
+          <p class="section-text">
+            Partnering with Eversour isn't just about services; it's about joining a growth-obsessed community. We'll become an extension of your team, strategizing, implementing, and celebrating your victories alongside you. Our data-driven approach and constant optimization ensure you stay ahead of the curve and conquer your digital goals.
+          </p>
+
+          <ul class="features-list">
+
+            <li class="features-item">
+
+              <figure class="features-item-banner">
+                <img src="./assets/images/feature-1.png" alt="feature banner">
+              </figure>
+
+              <div class="feature-item-content">
+                <h3 class="h2 item-title"> •	Know Thy Niche:</h3>
+
+                <p class="item-text">
+                  We get that every brand has unique needs and challenges. Tell us your story, your target audience, and your aspirations, and we'll craft a personalized roadmap to success.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="features-item">
+
+              <figure class="features-item-banner">
+                <img src="./assets/images/feature-2.png" alt="feature banner">
+              </figure>
+
+              <div class="feature-item-content">
+                <h3 class="h2 item-title"> •	Measurable Magic: </h3>
+
+                <p class="item-text">
+                  Forget empty promises. We track every metric, analyze every click, and optimize every campaign to deliver clear, demonstrable results. Watch your leads soar, engagement skyrocket, and revenue climb with our data-backed strategies.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta">
+        <div class="container">
+
+          <div class="cta-card">
+
+            <h3 class="cta-title">Book a meeting with us </h3>
+
+            <p class="cta-text">
+              Let's chart your course to digital dominance. Book a free consultation with our experts today, and discover how Eversour can be your launchpad to online stardom.
+            </p>
+        <a href="https://calendly.com/eversour01/digital-solutions-brief-your-path-to-success" target="_blank">
+    <button type="submit" class="btn btn-secondary">Book Now</button>
+  </a>
+          
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+        <div class="container">
+
+          <div class="contact-content">
+            <h2 class="h2 contact-title"> Let's Collaborate on Your Digital Odyssey</h2>
+
+            <figure class="contact-banner">
+              <img src="./assets/images/contact.png" alt="contact banner">
+            </figure>
+          </div>
+	    
+	   <div style="width: 300px; margin: 0 auto;">
+ 		 <!-- Assuming the API is generating a form inside a div with class 'form-container' -->
+ 		 <div class="form-container" style="width: 100%;">
+
+    		<!-- Include the script to fetch the form from the API -->
+    		 <script src="https://sheetdb.io/s/f/2u934jdftwtdj.js"></script>
+
+ 		 </div>	
+	  </div>
+          
         </div>
       </section>
 
     </article>
+
   </main>
 
-  <!-- Footer -->
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
   <footer>
+
     <div class="footer-top">
-      <!-- Your footer content -->
+        <section style="width: 100%; box-sizing: border-box; background-color: #f0f0f0; padding: 20px;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <ul style="display: flex; justify-content: space-between; list-style: none; padding: 0; margin: 0;">
+
+        <li style="flex: 1; margin-right: 10px;">
+          <div style="display: flex; align-items: center; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div style="margin-right: 10px;">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <div style="flex: 1;">
+              <h3 style="margin: 0; font-size: 1.2em;">Mail Here</h3>
+              <a href="mailto:hello@luaz.com" style="display: block; margin-top: 8px; color: #007bff; text-decoration: none;">eversour01@gmail.com</a>
+              <a href="mailto:info@luaz.com" style="display: block; margin-top: 8px; color: #007bff; text-decoration: none;">harsh.pandey260304@gmail.com</a>
+            </div>
+          </div>
+        </li>
+
+        <li style="flex: 1; margin-right: 10px;">
+          <div style="display: flex; align-items: center; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div style="margin-right: 10px;">
+              <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <div style="flex: 1;">
+              <h3 style="margin: 0; font-size: 1.2em;">Visit Here</h3>
+              <address style="margin: 0; font-style: normal;">
+                <span> Bhartiya Colony, Muzaffarnagar, Uttar Pradesh</span> India (251001) 
+              </address>
+            </div>
+          </div>
+        </li>
+
+        <li style="flex: 1; margin-right: 10px;">
+          <div style="display: flex; align-items: center; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div style="margin-right: 10px;">
+              <ion-icon name="headset-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <div style="flex: 1;">
+              <h3 style="margin: 0; font-size: 1.2em;">Call Here</h3>
+              <a href="tel:+1234567890" style="display: block; margin-top: 8px; color: #007bff; text-decoration: none;">+91 8960466553 </a>
+              <a href="tel:+2414524526" style="display: block; margin-top: 8px; color: #007bff; text-decoration: none;">+91 8791111395 </a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
     </div>
+  </section>
+    </div>
+
     <div class="footer-bottom">
-      <p class="copyright">&copy; 2024 <a href="#">@eversour</a> All right reserved</p>
+      <p class="copyright">
+        &copy; 2024 <a href="#">@eversour</a> All right reserved
+      </p>
     </div>
+
   </footer>
 
-  <!-- Go to Top Button -->
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
   <a href="#top" class="go-top active" data-go-top>
     <ion-icon name="chevron-up-outline"></ion-icon>
   </a>
 
-  <!-- Your custom scripts -->
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
   <script src="./assets/js/script.js"></script>
-  <!-- Ionicons -->
+
+  <!-- 
+    - ionicon link
+  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
